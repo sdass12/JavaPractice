@@ -13,7 +13,7 @@ public class LambdaExpressionsExample {
         );
 
         Stream<Student> stream = list.stream(); //Stream 얻기(stream 안에 Student의 정보들이 들어감)
-        stream.forEach( s -> {
+        stream.forEach( s -> {  // Student s = new Student(); 와 같음.
             System.out.println(s.getName() + " - " + s.getScore());  //Student 클래스에 있는 getName()과 getScore()를 통해 이름과 점수를 받아 와서 출력.
                 });
     }
